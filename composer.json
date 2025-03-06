@@ -1,16 +1,16 @@
 {
     "name": "abc/testpackage-sdk",
-    "description": "jsdjas",
+    "description": "test",
     "type": "library",
     "keywords": [],
-    "homepage": "https://docs.apimatic.io",
+    "homepage": "https://apimatic.io",
     "license": [
         "MIT"
     ],
     "authors": [
         {
-            "name": "Author",
-            "email": "support@test.io"
+            "name": "author",
+            "email": "test@apimatic.io"
         }
     ],
     "support": {},
@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "APIMATICCalculatorLib\\": "src/"
+            "APIWithComplexHeaderParametersLib\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "APIMATICCalculatorLib\\Tests\\": "tests/"
+            "APIWithComplexHeaderParametersLib\\Tests\\": "tests/"
         }
     },
     "scripts": {

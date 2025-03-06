@@ -1,9 +1,9 @@
 
-# Getting Started with APIMATIC Calculator
+# Getting Started with API with Complex Header Parameters
 
 ## Introduction
 
-Simple calculator API hosted on APIMATIC
+Demonstrates the use of complex types, including maps, custom types, and oneOf types in headers.
 
 ## Install the Package
 
@@ -41,7 +41,6 @@ The following parameters are configurable for the API Client:
 
 | Parameter | Type | Description |
 |  --- | --- | --- |
-| `environment` | `Environment` | The API environment. <br> **Default: `Environment.PRODUCTION`** |
 | `timeout` | `int` | Timeout for API calls in seconds.<br>*Default*: `0` |
 | `enableRetries` | `bool` | Whether to enable retries and backoff feature.<br>*Default*: `false` |
 | `numberOfRetries` | `int` | The number of retries to make.<br>*Default*: `0` |
@@ -55,14 +54,12 @@ The following parameters are configurable for the API Client:
 The API client can be initialized as follows:
 
 ```php
-$client = APIMATICCalculatorClientBuilder::init()
-    ->environment(Environment::PRODUCTION)
-    ->build();
+$client = APIWithComplexHeaderParametersClientBuilder::init()->build();
 ```
 
 ## List of APIs
 
-* [Simple Calculator](https://www.github.com/ZahraN444/testpackage-php-sdk/tree/1.2.2/doc/controllers/simple-calculator.md)
+* [API](https://www.github.com/ZahraN444/testpackage-php-sdk/tree/1.2.2/doc/controllers/api.md)
 
 ## Additional Documentation
 

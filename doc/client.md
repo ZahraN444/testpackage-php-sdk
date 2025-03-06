@@ -5,7 +5,6 @@ The following parameters are configurable for the API Client:
 
 | Parameter | Type | Description |
 |  --- | --- | --- |
-| `environment` | `Environment` | The API environment. <br> **Default: `Environment.PRODUCTION`** |
 | `timeout` | `int` | Timeout for API calls in seconds.<br>*Default*: `0` |
 | `enableRetries` | `bool` | Whether to enable retries and backoff feature.<br>*Default*: `false` |
 | `numberOfRetries` | `int` | The number of retries to make.<br>*Default*: `0` |
@@ -19,12 +18,10 @@ The following parameters are configurable for the API Client:
 The API client can be initialized as follows:
 
 ```php
-$client = APIMATICCalculatorClientBuilder::init()
-    ->environment(Environment::PRODUCTION)
-    ->build();
+$client = APIWithComplexHeaderParametersClientBuilder::init()->build();
 ```
 
-## APIMATIC Calculator Client
+## API with Complex Header Parameters Client
 
 The gateway for the SDK. This class acts as a factory for the Controllers and also holds the configuration of the SDK.
 
@@ -32,5 +29,5 @@ The gateway for the SDK. This class acts as a factory for the Controllers and al
 
 | Name | Description |
 |  --- | --- |
-| getSimpleCalculatorController() | Gets SimpleCalculatorController |
+| getAPIController() | Gets APIController |
 
